@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Max - Portfolio</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Max Cher</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+						<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header Section -->
+		<header id="home" class="intro-section">
+			<div class="container text-center">
+				<h1 class="display-4 animate__animated animate__fadeIn">Max's Portfolio</h1>
+				<p class="lead animate__animated animate__fadeInUp mb-4">Undergraduate in Computing and Design at PolyU</p>
+				<img src="./src/profile.jpg" alt="Max" class="profile-pic mb-5 animate__animated animate__zoomIn" />
+				<h2 class="animate__animated animate__fadeInUp mb-3">Max - IT Officer and Developer</h2>
+				<p class="animate__animated animate__fadeInUp mb-5">
+					Currently an IT Officer and Developer at PolyU, managing multimedia and software development projects while pursuing a Master's in Information Technology.
+				</p>
+			</div>
+		</header>
+
+		<!-- Skills Section -->
+		<section id="work" class="skills-section bg-light text-dark">
+			<div class="container">
+				<h3 class="text-center slide-in">Skills</h3>
+				<div class="row text-center">
+					<div class="col-md-4">
+						<div class="card p-4 fade-in">
+							<h4>Software Application</h4>
+							<p>
+								Specializes in designing and developing web and mobile applications, VR, and AR applications. Offers technical insights and support to align technology solutions
+								with business objectives.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card p-4 fade-in">
+							<h4>Design</h4>
+							<p>Meticulously design creative and innovative visual elements for applications, posters, packaging, and videos.</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card p-4 fade-in">
+							<h4>3D Rendering</h4>
+							<p>Contribute high-quality creative assets, developing intricate 3D models, animations, and visual effects for a diverse range of projects.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Awards Section -->
+		<section class="awards-section text-center">
+			<div class="container">
+				<h3 class="slide-in-right">Awards</h3>
+				<p>The Hong Kong ICT Awards – Student Innovation – Certificate of Merit</p>
+				<p>Global Game Jam 2024 Best Party Game Awardee</p>
+				<p>Global Game Jam 2023 Best Party Game in Metaverse Awardee</p>
+				<p>Global Game Jam 2022 Best Engagement Game Awardee</p>
+				<p>Champion of Best Capstone Project Award Competition 2021 in PolyU</p>
+				<p>HKCS Student Sponsorship Award 2022 Computer Soceity</p>
+				<p>InfoTech Job Market Driven Scholarship</p>
+				<p>Cheung Chin To Service-Learning Scholarship</p>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section class="projects-section">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<!-- Text Section -->
+					<div class="col-md-6 text-section">
+						<h6 class="text-uppercase">Outstanding Project</h6>
+						<h2 class="display-4">VR Vocational Training System</h2>
+						<p>
+							The 2021 Best FYP Award Champion and ITC Student Innovation Award Winning. Implemented with HTC Vive and Leap Motion for patients with mental disorders on cognitive
+							training.
+						</p>
+						<a href="#" class="btn btn-outline-dark">View Details</a>
+					</div>
+
+					<!-- Image Section -->
+					<div class="col-md-6 image-section">
+						<img src="./src/project-image.jpg" alt="VR Vocational Training System" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education Section -->
+		<section id="about" class="education-section text-center">
+			<div class="container">
+				<h3 class="slide-in">Education</h3>
+				<div class="timeline">
+					<div class="timeline-item timeline-item-left slide-in-left">
+						<h4>Bachelor of Computing and Design</h4>
+						<p>PolyU, 2017 - 2021</p>
+					</div>
+					<div class="timeline-item timeline-item-right slide-in-right">
+						<h4>Master’s in Information Technology</h4>
+						<p>PolyU, 2024 - Present</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact-section">
+			<div class="container text-center">
+				<h3 class="fade-in">Contact Me</h3>
+				<form class="contact-form" action="/" method="post">
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required />
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required />
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Send Message</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<p>© 2024 Max - All Rights Reserved</p>
+		</footer>
+
+		<!-- Bootstrap JS and dependencies -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
+</html>

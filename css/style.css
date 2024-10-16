@@ -1,0 +1,347 @@
+/* General body styling */
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to right, #6a11cb, #2575fc);
+	color: white;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar */
+.navbar {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 15px 0;
+}
+
+.navbar-nav .nav-link {
+	color: white !important;
+	transition: color 0.3s ease;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #6a11cb !important;
+}
+
+/* Header Section Styling */
+.intro-section {
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-image: url("../src/background.jpg"); /* Replace with your own background image */
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	text-align: center;
+	position: relative;
+	padding-top: 80px; /* Space for the fixed navbar */
+	margin-top: 100px;
+}
+
+.intro-section .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5); /* Adds a subtle dark overlay for readability */
+	z-index: 1;
+}
+
+.intro-section .container {
+	position: relative;
+	z-index: 2;
+}
+
+h1 {
+	margin-bottom: 20px; /* Add space below the main heading */
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	object-position: top;
+	border: 5px solid white; /* Adds a nice white border around the profile picture */
+	margin-bottom: 30px;
+}
+
+h2 {
+	margin-bottom: 15px; /* Add more space below the second heading */
+}
+
+p {
+	margin-bottom: 30px; /* Add space below paragraphs */
+}
+
+/* Text Animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		transform: scale(0.8);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.fade-in {
+	animation: fadeIn 2s ease-in;
+}
+
+.fade-in-up {
+	animation: fadeInUp 2s ease-in;
+}
+
+.zoom-in {
+	animation: zoomIn 2s ease-in;
+}
+
+/* Smooth scrolling animations */
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-50%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-50%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(50%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.slide-in {
+	animation: slideIn 1.5s ease-in-out;
+}
+
+.slide-in-left {
+	animation: slideInLeft 1.5s ease-in-out;
+}
+
+.slide-in-right {
+	animation: slideInRight 1.5s ease-in-out;
+}
+
+/* Section Spacing */
+.section {
+	padding: 60px 0; /* Adds consistent vertical spacing to sections */
+}
+
+/* Skills and Cards */
+.skills-section,
+.contact-section,
+.projects-section,
+.awards-section,
+.education-section {
+	padding: 50px 0;
+}
+
+/* Awards Section */
+.awards-section p {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: none;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+}
+
+/* Projects Section Styling */
+.projects-section {
+	padding: 10vh 50vh;
+	background-color: #f8f9fa; /* Light background color */
+}
+
+.text-section {
+	padding: 20px 40px;
+	text-align: left;
+}
+
+.text-section h6 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #888;
+	margin-bottom: 10px;
+}
+
+.text-section h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #888;
+}
+
+.text-section p {
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+.text-section a {
+	font-size: 16px;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 2px solid #333;
+	color: #333;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text-section a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Image Section */
+.image-section {
+	padding: 20px 0;
+}
+
+.image-section img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.text-section {
+		text-align: center;
+	}
+
+	.image-section {
+		padding-top: 30px;
+	}
+}
+
+/* Timeline Styling */
+.timeline {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: #2575fc;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.timeline-item {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+.timeline-item::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -13px;
+	background-color: #fff;
+	border: 4px solid #2575fc;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.timeline-item-left {
+	left: 0;
+}
+
+.timeline-item-right {
+	left: 50%;
+}
+
+.timeline-item-right::after {
+	left: -13px;
+}
+
+@media screen and (max-width: 600px) {
+	.timeline-item-left,
+	.timeline-item-right {
+		left: 0;
+		width: 100%;
+	}
+	.timeline-item-right::after {
+		left: 50%;
+	}
+}
+
+/* Footer */
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #111;
+	color: white;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+	margin-bottom: 20px;
+}
+
+.contact-form .btn {
+	background-color: #6a11cb;
+	border: none;
+}
+
+.contact-form .btn:hover {
+	background-color: #2575fc;
+	transition: background-color 0.3s ease;
+}
